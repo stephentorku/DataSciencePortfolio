@@ -1,4 +1,4 @@
-# DataSciencePortfoli
+# Data Science Portfolio
 
 ## Spotify Listening Trends Dashboard (RShiny)
 Technologies: R, Shiny, Spotify API, spotifyr, ggplot2, dplyr, leaflet, plotly
