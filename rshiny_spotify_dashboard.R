@@ -22,8 +22,8 @@ library(reactable)
 library(plotly)
 
 
-Sys.setenv(SPOTIFY_CLIENT_ID = '4cc947da074c483a83711e8d9ecb2db5')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = '62146858c5824b79b93ab09b39717bb2')
+Sys.setenv(SPOTIFY_CLIENT_ID = '')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = '')
 Sys.setenv(SPOTIFY_REDIRECT_URI = "http://localhost:1410/") 
 access_token <- get_spotify_access_token()
 
