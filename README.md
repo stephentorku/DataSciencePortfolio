@@ -31,6 +31,9 @@ Highlights:
 
 
 ## Suicidal Ideation Detection (NLP Binary Classification)
+
+https://github.com/Ph1lipXu/Machine-Learning-on-Suicide-and-Depression-Detection
+
 Technologies: Python, TensorFlow, BERT, Word2Vec, FastText, spaCy, NLTK, scikit-learn
 
 Built a deep learning system to classify text as suicidal or non-suicidal using Reddit posts from SuicideWatch, depression, and teenagers forums. Key components:
