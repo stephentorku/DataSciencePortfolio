@@ -66,7 +66,39 @@ Deep Learning Architectures:
 
 ### Key Insights
 - Preserving emotional cues (emojis, punctuation like "!") improved model sensitivity.
-
 - Bi-LSTM outperformed CNN due to better handling of long-range dependencies in text.
 
 Impact: Potential application in mental health chatbots to flag high-risk posts for human intervention.
+
+
+
+## Credit Card Fraud Detection
+**End-to-end ML system for real-time fraud detection with class imbalance handling**
+
+### Overview
+Developed a fraud detection system that handles extreme class imbalance (0.17% fraud rate) using SMOTE and compared multiple ML models to identify the best performer for fraud detection.
+
+### Key Highlights
+- **Class Imbalance Handling**: Implemented SMOTE + Random Undersampling to address 1:577 imbalance ratio
+- **Model Comparison**: Evaluated Logistic Regression, Random Forest, and XGBoost
+- **Feature Engineering**: Created time-based, amount-based, and statistical aggregation features from PCA components
+- **Comprehensive EDA**: Analyzed temporal patterns, transaction amounts, and feature correlations
+
+### Technical Stack
+- **ML/DS**: scikit-learn, XGBoost, pandas, numpy
+- **Imbalanced Learning**: SMOTE (imbalanced-learn)
+- **Visualization**: matplotlib, seaborn
+
+
+### Key Learnings
+1. **Accuracy is misleading** for imbalanced datasets - a model predicting all transactions as "normal" achieves 99.83% accuracy but catches 0% fraud
+2. **SMOTE effectively handles** severe class imbalance when combined with undersampling
+3. **Feature engineering** on anonymized PCA features still yields predictive power through statistical aggregations and interactions
+4. **Proper evaluation metrics** (ROC-AUC, Precision, Recall) are essential for imbalanced classification
+
+### Dataset
+- **Source**: Kaggle Credit Card Fraud Detection Dataset
+- **Size**: 284,807 transactions
+- **Features**: 28 PCA-transformed features + Time + Amount
+- **Challenge**: Severe class imbalance (492 frauds out of 284,807 transactions)
+
